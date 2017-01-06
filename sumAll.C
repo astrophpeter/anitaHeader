@@ -29,7 +29,7 @@ while (myReader.Next()) {
 for (int i =0; i <= NUM_OF_RUNS; i++) {
 
 char headerFileLoc[150];
-sprintf (headerFileLoc, "run%d/eventHeadFile%d.root", i, i);
+sprintf (headerFileLoc, "../../unix/anita3/anita4/flight1617/telem/root/run%d/eventHeadFile%d.root", i, i);
 
 TFile *temp = TFile::Open(headerFileLoc);
 
